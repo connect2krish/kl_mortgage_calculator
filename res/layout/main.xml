@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:focusable="true" android:background="#C7BA99">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" android:weightSum="1" android:layout_alignParentEnd="true">
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"/>
+        <TextView
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/error" android:layout_weight="0.05" android:textColor="#ffff4657"/>
+        <Space android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.08"
+               android:id="@+id/space6"/>
+        <EditText
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/loan_amt" android:layout_gravity="center_horizontal"
+                android:editable="true" android:autoText="true" android:clickable="true" android:hint="Loan Amount"/>
+        <Space android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.07"
+               android:id="@+id/space"/>
+        <EditText android:layout_width="180dp" android:layout_height="wrap_content" android:inputType="numberDecimal"
+                  android:ems="10" android:id="@+id/roi" android:layout_gravity="center_horizontal"
+                  android:editable="true" android:clickable="true"
+                  android:enabled="true" android:autoText="true" android:hint="Rate of Interest"/>
+        <Space android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06"
+               android:id="@+id/space2"/>
+        <EditText android:layout_width="175dp" android:layout_height="wrap_content" android:inputType="numberDecimal"
+                  android:ems="10" android:id="@+id/years"
+                  android:layout_gravity="center_horizontal" android:editable="true"
+                  android:enabled="true" android:clickable="true" android:hint="Number of years"/>
+        <Space android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.05"
+               android:id="@+id/space3" android:layout_gravity="center_horizontal"/>
+        <EditText android:layout_width="180dp" android:layout_height="wrap_content" android:inputType="numberDecimal"
+                  android:ems="10" android:id="@+id/pmi" android:layout_gravity="center_horizontal"
+                  android:editable="true" android:enabled="true" android:clickable="true"
+                  android:hint="PMI(if applicable)"/>
+        <Space android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.10"
+               android:id="@+id/space5" android:layout_gravity="center_horizontal"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display"
+                android:id="@+id/display" android:layout_gravity="center_horizontal"/>
+        <Space android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.09"
+               android:id="@+id/space4" android:layout_gravity="right"/>
+        <EditText android:layout_width="171dp" android:layout_height="wrap_content" android:inputType="numberDecimal"
+                  android:ems="10" android:id="@+id/result"
+                  android:layout_gravity="center_horizontal" android:editable="false" android:enabled="false"
+                  android:hint="Mortgage/month" android:clickable="false"/>
+    </LinearLayout>
+</RelativeLayout>
